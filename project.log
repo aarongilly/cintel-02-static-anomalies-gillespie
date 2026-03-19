@@ -73,3 +73,81 @@
 2026-03-18 22:45:59 | INFO | P2 | Pipeline executed successfully!
 2026-03-18 22:45:59 | INFO | P2 | ========================
 2026-03-18 22:45:59 | INFO | P2 | END main()
+2026-03-18 22:56:57 | INFO | P2 | === RUN START ===
+2026-03-18 22:56:57 | INFO | P2 | project=CINTEL
+2026-03-18 22:56:57 | INFO | P2 | repo_dir=cintel-02-static-anomalies-gillespie
+2026-03-18 22:56:57 | INFO | P2 | python=3.14.3
+2026-03-18 22:56:57 | INFO | P2 | os=Darwin 25.3.0
+2026-03-18 22:56:57 | INFO | P2 | shell=zsh
+2026-03-18 22:56:57 | INFO | P2 | cwd=.
+2026-03-18 22:56:57 | INFO | P2 | github_actions=False
+2026-03-18 22:56:57 | INFO | P2 | ========================
+2026-03-18 22:56:57 | INFO | P2 | START main()
+2026-03-18 22:56:57 | INFO | P2 | ========================
+2026-03-18 22:56:57 | INFO | P2 | ROOT_DIR = .
+2026-03-18 22:56:57 | INFO | P2 | DATA_FILE = data/clinic_data_gillespie.csv
+2026-03-18 22:56:57 | INFO | P2 | OUTPUT_FILE = artifacts/anomalies_gillespie.csv
+2026-03-18 22:56:57 | INFO | P2 | ARTIFACTS_DIR = artifacts
+2026-03-18 22:56:57 | INFO | P2 | Loaded 24 patient records
+2026-03-18 22:56:57 | INFO | P2 | Studying children's ages and heights to find anomalies...
+2026-03-18 22:56:57 | INFO | P2 | MIN_REASONABLE_X_VALUE: 16.0 in years
+2026-03-18 22:56:57 | INFO | P2 | MAX_REASONABLE_Y_VALUE: 84.0 in inches
+2026-03-18 22:56:57 | INFO | P2 | Count of anomalies found: 0
+2026-03-18 22:56:57 | INFO | P2 | Wrote anomalies file: /Users/aaron/Developer/cintel-02-static-anomalies-gillespie/artifacts/anomalies_gillespie.csv
+2026-03-18 22:56:57 | INFO | P2 | ========================
+2026-03-18 22:56:57 | INFO | P2 | Pipeline executed successfully!
+2026-03-18 22:56:57 | INFO | P2 | ========================
+2026-03-18 22:56:57 | INFO | P2 | END main()
+2026-03-18 22:58:14 | INFO | P2 | === RUN START ===
+2026-03-18 22:58:14 | INFO | P2 | project=CINTEL
+2026-03-18 22:58:14 | INFO | P2 | repo_dir=cintel-02-static-anomalies-gillespie
+2026-03-18 22:58:14 | INFO | P2 | python=3.14.3
+2026-03-18 22:58:14 | INFO | P2 | os=Darwin 25.3.0
+2026-03-18 22:58:14 | INFO | P2 | shell=zsh
+2026-03-18 22:58:14 | INFO | P2 | cwd=.
+2026-03-18 22:58:14 | INFO | P2 | github_actions=False
+2026-03-18 22:58:14 | INFO | P2 | ========================
+2026-03-18 22:58:14 | INFO | P2 | START main()
+2026-03-18 22:58:14 | INFO | P2 | ========================
+2026-03-18 22:58:14 | INFO | P2 | ROOT_DIR = .
+2026-03-18 22:58:14 | INFO | P2 | DATA_FILE = data/clinic_data_gillespie.csv
+2026-03-18 22:58:14 | INFO | P2 | OUTPUT_FILE = artifacts/anomalies_gillespie.csv
+2026-03-18 22:58:14 | INFO | P2 | ARTIFACTS_DIR = artifacts
+2026-03-18 22:58:14 | INFO | P2 | Loaded 24 patient records
+2026-03-18 22:58:14 | INFO | P2 | Studying children's ages and heights to find anomalies...
+2026-03-18 22:58:14 | INFO | P2 | MIN_REASONABLE_X_VALUE: 16.0 in years
+2026-03-18 22:58:14 | INFO | P2 | MAX_REASONABLE_X_VALUE: 99.0 in years
+2026-03-18 22:58:14 | INFO | P2 | MAX_REASONABLE_Y_VALUE: 84.0 in inches
+2026-03-18 22:58:14 | INFO | P2 | Count of anomalies found: 2
+2026-03-18 22:58:14 | INFO | P2 | Wrote anomalies file: /Users/aaron/Developer/cintel-02-static-anomalies-gillespie/artifacts/anomalies_gillespie.csv
+2026-03-18 22:58:14 | INFO | P2 | ========================
+2026-03-18 22:58:14 | INFO | P2 | Pipeline executed successfully!
+2026-03-18 22:58:14 | INFO | P2 | ========================
+2026-03-18 22:58:14 | INFO | P2 | END main()
+2026-03-18 23:01:46 | INFO | P2 | === RUN START ===
+2026-03-18 23:01:46 | INFO | P2 | project=CINTEL
+2026-03-18 23:01:46 | INFO | P2 | repo_dir=cintel-02-static-anomalies-gillespie
+2026-03-18 23:01:46 | INFO | P2 | python=3.14.3
+2026-03-18 23:01:46 | INFO | P2 | os=Darwin 25.3.0
+2026-03-18 23:01:46 | INFO | P2 | shell=zsh
+2026-03-18 23:01:46 | INFO | P2 | cwd=.
+2026-03-18 23:01:46 | INFO | P2 | github_actions=False
+2026-03-18 23:01:46 | INFO | P2 | ========================
+2026-03-18 23:01:46 | INFO | P2 | START main()
+2026-03-18 23:01:46 | INFO | P2 | ========================
+2026-03-18 23:01:46 | INFO | P2 | ROOT_DIR = .
+2026-03-18 23:01:46 | INFO | P2 | DATA_FILE = data/clinic_data_gillespie.csv
+2026-03-18 23:01:46 | INFO | P2 | OUTPUT_FILE = artifacts/anomalies_gillespie.csv
+2026-03-18 23:01:46 | INFO | P2 | ARTIFACTS_DIR = artifacts
+2026-03-18 23:01:46 | INFO | P2 | Loaded 24 patient records
+2026-03-18 23:01:46 | INFO | P2 | Studying children's ages and heights to find anomalies...
+2026-03-18 23:01:46 | INFO | P2 | MIN_REASONABLE_X_VALUE: 16.0 in years
+2026-03-18 23:01:46 | INFO | P2 | MAX_REASONABLE_X_VALUE: 99.0 in years
+2026-03-18 23:01:46 | INFO | P2 | MIN_REASONABLE_Y_VALUE: 36.0 in inches
+2026-03-18 23:01:46 | INFO | P2 | MAX_REASONABLE_Y_VALUE: 84.0 in inches
+2026-03-18 23:01:46 | INFO | P2 | Count of anomalies found: 2
+2026-03-18 23:01:46 | INFO | P2 | Wrote anomalies file: /Users/aaron/Developer/cintel-02-static-anomalies-gillespie/artifacts/anomalies_gillespie.csv
+2026-03-18 23:01:46 | INFO | P2 | ========================
+2026-03-18 23:01:46 | INFO | P2 | Pipeline executed successfully!
+2026-03-18 23:01:46 | INFO | P2 | ========================
+2026-03-18 23:01:46 | INFO | P2 | END main()

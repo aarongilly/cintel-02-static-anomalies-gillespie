@@ -56,8 +56,8 @@ ARTIFACTS_DIR: Final[Path] = ROOT_DIR / "artifacts"
 
 # === DECLARE GLOBAL CONSTANTS FOR FILE PATHS ===
 
-DATA_FILE: Final[Path] = DATA_DIR / "clinic_data_case.csv"
-OUTPUT_FILE: Final[Path] = ARTIFACTS_DIR / "anomalies_case.csv"
+DATA_FILE: Final[Path] = DATA_DIR / "clinic_data_gillespie.csv"
+OUTPUT_FILE: Final[Path] = ARTIFACTS_DIR / "anomalies_gillespie.csv"
 
 
 # === DEFINE THE MAIN FUNCTION ===
@@ -113,23 +113,33 @@ def main() -> None:
     # Anything above this value is suspicious.
     LOG.info("Studying children's ages and heights to find anomalies...")
 
-    # x is age in years, so 16 is the upper limit for kids
-    MAX_REASONABLE_X_VALUE: Final[float] = 16.0
+    # x is age in years, so 16 is the lower limit for adults
+    MIN_REASONABLE_X_VALUE: Final[float] = 16.0
 
-    # y is height in inches, so maybe 6 feet (72 inches) is a reasonable upper limit
-    MAX_REASONABLE_Y_VALUE: Final[float] = 80.0
+    # x is age in years, so 99 is the upper limit for adults
+    MAX_REASONABLE_X_VALUE: Final[float] = 99.0
 
+    # y is height in inches, so maybe 3 feet (36 inches) is a reasonable lower limit
+    MIN_REASONABLE_Y_VALUE: Final[float] = 36.0
+
+    # y is height in inches, so maybe 7 feet (84 inches) is a reasonable upper limit
+    MAX_REASONABLE_Y_VALUE: Final[float] = 84.0
+
+    LOG.info(f"MIN_REASONABLE_X_VALUE: {MIN_REASONABLE_X_VALUE} in years")
     LOG.info(f"MAX_REASONABLE_X_VALUE: {MAX_REASONABLE_X_VALUE} in years")
+    LOG.info(f"MIN_REASONABLE_Y_VALUE: {MIN_REASONABLE_Y_VALUE} in inches")
     LOG.info(f"MAX_REASONABLE_Y_VALUE: {MAX_REASONABLE_Y_VALUE} in inches")
 
     # Create a new DataFrame named anomalies_df that contains
     # only the rows where EITHER
-    # the age is TOO HIGH OR
+    # the age is TOO LOW OR
     # the height is TOO HIGH.
     # A single pipe (|) is the OR operator in polars.
     # We will use greater than or equal to (>=) to find values at or above the threshold.
     anomalies_df: pl.DataFrame = df.filter(
-        (pl.col("age_years") >= MAX_REASONABLE_X_VALUE)
+        (pl.col("age_years") < MIN_REASONABLE_X_VALUE)
+        | (pl.col("age_years") >= MAX_REASONABLE_X_VALUE)
+        | (pl.col("height_inches") < MIN_REASONABLE_Y_VALUE)
         | (pl.col("height_inches") >= MAX_REASONABLE_Y_VALUE)
     )
 
